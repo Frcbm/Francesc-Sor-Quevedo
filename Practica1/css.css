@@ -1,0 +1,93 @@
+/*Amb el selector universal pos un marge mínim*/
+*{
+    margin:5px;
+}
+
+/*Amb <body> pos un color de fons*/
+body{
+    background-color: burlywood;
+}
+
+/*Aquest son els css que afectaran principalmente la pàgina inici, he intentat emplear diversos tipus de selectors,
+de fet he creat un boto per emplear un selector d'atribut en ell*/
+main{
+    color: white;
+}
+main > h2{
+    text-decoration: underline;
+    color:black;
+}
+[type="button"]{
+    width: 150px;
+}
+input+span{
+    color:blue;
+}
+
+/*Defineixo les capses que envoltaràn imatges i videos, aixó com un tamany per aquests*/
+img{
+    border: 2px solid black;
+}
+video{
+    border: 2px solid black;
+    width: 640px;
+    height: 360px;
+}
+
+/*Això son tots el CSS que afecten a l'estil dels enllaços, amb pseudoclasses,
+pseudoelements o selectors descendents*/
+a:active{
+    color:blue;
+    text-decoration: line-through;
+}
+a:hover{
+    text-decoration: none;    
+}
+a:visited{
+    color:white;
+}
+.vuelta:visited{
+    color:black;
+    text-decoration: none;
+}
+.vuelta::after{
+    content: url(contents/imagenes/flecha.png);
+}
+/*Aquest tambe afectarà als enllaços perque els elements al quals afecta ho son*/
+nav span{
+    color: green;
+}
+/*Aquest css em serveix per fer que la imatge .vuelta::after quedi en una mateixa linea*/
+a>p{
+    display: inline;
+}
+
+/*Aquests son els css que afecten a la tabla, he empleat clases i id per canviar la posició i els colors en diferentes posicions*/
+table{
+    border:2px solid black;    
+}
+#tabla{
+    margin-top:200px;
+    margin-left:500px;
+}
+tr{
+    text-align: center;
+    
+}
+td{
+    border:2px solid red;
+    width: 120px;
+}
+.tr{
+    background-color: blueviolet;
+}
+#tr2{
+    background-color:brown;
+}
+#tr3{
+    background-color:crimson;
+}
+tr>td{
+    color:black;
+}
+
